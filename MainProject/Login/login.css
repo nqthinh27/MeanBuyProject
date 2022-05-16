@@ -1,0 +1,272 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+#topHr {
+    border-top: 1px solid rgb(243, 143, 47);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 0px;
+}
+
+#parent{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 75px;
+    background: #fff;
+    padding-top: 0;
+    position: relative;
+    max-width: 100%;
+}
+
+.left img{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.right{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 50px 10px 10px;
+    
+}
+
+.right p{
+    font-size: small;
+}
+
+.user i{
+    width: fit-content;
+    height: 30px;
+    margin-left: 2px;
+    font-size: larger;
+    color: #f38f2f;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
+.user{
+    margin-left: 50px;
+}
+
+.user span{
+    position: relative;
+    top: 10px;
+    font-size: smaller;
+    color: black;
+}
+
+.user h4{
+    margin-top: 5px;
+    font-size: small;
+    font-weight: 800;
+    padding-left: 10px;
+    
+}
+
+#loginParent{
+    display: flex;
+}
+
+.loginForm{
+  font-family: 'Montserrat', sans-serif;
+  /* border: 1px solid red; */
+  width: 60%;
+  border-radius: 5px;
+  margin-top: 130px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+  flex: 1;
+}
+
+.loginForm h4{
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+.google{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+
+.google>div:nth-child(1){
+    font-size: 13px;
+    line-height: 30px;
+    padding: 0 6px;
+    background-color: #4865b5;
+    color: white;
+    width: fit-content;
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    margin-right: 50px;
+}
+.google>div a{
+  color: white;
+}
+.google>div:nth-child(2){
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0 6px;
+  background-color: #4285f4;
+  color: white;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.google>div:nth-child(2) img{
+  width: 20px;
+  background-color: white ;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+
+.wraplogin{
+    width: fit-content;
+    position: relative;
+    display: block;
+    flex: 1;
+    text-align: center;
+    line-height: 5px;
+    margin-top: 190px;
+}
+
+.wraplogin img {
+    width: 30%;
+}
+
+.footerParent {
+  width: 100%;
+  height: 200px;
+  background-color: #f2f2f2;
+  font-family: sans-serif;
+}
+
+.child {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  padding-top: 10px;
+}
+
+.info {
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  margin-right: 30px;
+}
+.info h2 {
+  color: #f7941d;
+  font-size: medium;
+  margin-bottom: 10px;
+  font-weight: 400;
+  /* font-family: "Inter", sans-serif; */
+}
+.info li a {
+  color: #666;
+  font-weight: 500;
+  font-size: 12px;
+}
+.info li {
+  list-style: none;
+}
+.quick {
+  width: 30%;
+  height: 100%;
+  margin-right: 10px;
+}
+.quick h2 {
+  margin-left: 40px;
+}
+.quick a {
+  color: black;
+  font-weight: 500;
+  font-size: small;
+  text-decoration: none;
+}
+
+#myemail, #mypassword {
+    text-align: left;
+    padding-left: 5px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    display: block;
+    padding: 0.1em 0 1px 0;
+    outline: 0;
+    margin: 0;
+    background: 0;
+}
+
+h2 {
+    color: #f7941d;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+#submit {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 0px;
+    background-color: #f7941d;
+    border: 2px solid #f7941d;
+    appearance: auto;
+    user-select: none;
+    white-space: pre;
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    box-sizing: border-box;
+    text-decoration: none;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.policy {
+    background: #dbdbdb;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+    color: #666;
+    font-size: small;
+    padding-right: 20px;
+}
+
+.paymentmethod {
+    background: url(https://www.meanbuy.com/assets/img/india/icons/paymethods22.png);
+    width: 275px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-block;
+}

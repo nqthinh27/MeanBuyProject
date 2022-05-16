@@ -1,0 +1,162 @@
+body{
+    font-family: "Lato",sans-serif;
+   }
+   .inr-sign::before{content:"\20B9"}
+   .proTop{
+       padding-left: 20px;
+       padding-top: 20px;
+       padding-right: 20px;
+       padding-bottom: 20px;
+       display: flex;
+   }
+   .proTop>:first-child>a{
+       font-style: italic;
+       color: rgb(0, 0, 0);
+   }
+   .fa-angle-right{
+       color: rgb(180, 176, 176);
+   }
+   
+   .parent{
+       margin: 160px 80px 150px 80px;
+       display: grid;
+       grid-template-columns:1fr 9fr 15fr;
+       gap:80px;
+   }
+   #image{
+       width:370px;
+       height:370px;
+       margin-left: 20px;
+   }
+   #img{
+       padding-top:50px;
+       width:100%;
+       height: 100%;
+   }
+   #details{
+       width:600px;
+      justify-content: center;
+      height: 450px;
+      overflow-y: scroll;
+    
+   }
+   #title{
+       display: grid;
+       grid-template-columns:3fr 1fr ;
+       justify-content: space-between;
+       margin-top: 5px;
+   }
+   #mapDetails{
+       margin-left: 10px;
+     
+   }
+   #ratingBox{
+       width:600px;
+        display: flex;
+        gap: 10px;
+        margin:10px
+   }
+   #priceBox{
+       gap:10px;
+       display: flex;
+       margin: 15px;
+       margin:10px
+   }
+   #sp{
+       padding-top: 10px;
+       font-size: 20px;
+       font-family: sans-serif;
+       color: rgb(119, 117, 117);
+       text-decoration: line-through;
+   }
+   #rating{
+       width:100px;
+       display: flex;
+       font-size: 16px;
+       font-weight: bold;
+       color:white;
+       background-color: rgb(15, 218, 15);
+       border-radius: 5px;
+      padding: 3px 10px 3px 25px;
+   }
+   #review{
+       color: #F68815;
+       text-decoration: underline;
+       font-family: sans-serif;
+   }
+   .off{
+       font-size: 25px;
+       font-family: sans-serif;
+       color: #008A00;
+   }
+   .priceB{
+       color: #F68815;
+   }
+   .save{
+       font-size: 20px;
+       padding-left: 10px;
+   }
+   #gift{
+       padding-top: 10px;
+       font-family: sans-serif;
+       color: #02aa02;
+       text-decoration: underline;
+   }
+   #TC{
+       font-size: 12px;
+       color: #F68815;
+       padding-left: 2px;
+       font-weight: bold;
+   }
+   #prep{
+      font-family:sans-serif;
+      padding-top: 15px;
+   }
+   #PR{
+       color: black;
+       font-weight: bold;
+       text-decoration: underline;
+   }
+   #avail{
+       padding: 10px;
+       font-family: sans-serif;
+       font-size: 15px;
+   }
+   #price{
+       font-size: 30px;
+       font-weight: bold;
+       color: #fc8404;
+   }
+   #button{
+       width:200px;
+       background-color: #fc8404;
+       color: white;
+       font-family: sans-serif;
+       font-size: 30px;
+       margin: 10px;
+       padding: 10px;
+       text-align: center;
+       cursor: pointer;
+   }
+   #Bprice{
+       font-family: serif;
+       padding-left: 15px;
+       margin-top: 10px;
+       color: #fc8404;
+   }
+
+
+   #discdiv{
+       font-family: sans-serif;
+       font-size: 20px;
+       background-color: #fc8404;
+       color: white;
+       height: 40px;
+       width: 60px;
+       text-align: center;
+       padding-top: 10px;
+       border-radius: 50%;
+       margin-left: 50px;
+       margin-top: 100px;
+       margin-right: -120px;
+   }

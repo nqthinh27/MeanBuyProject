@@ -1,0 +1,96 @@
+body{
+ font-family: "Lato",sans-serif;
+}
+.inr-sign::before{content:"\20B9"}
+.parent{
+    margin-top: 170px;
+    display: grid;
+    grid-template-columns:1fr 5fr;
+    gap:20px;
+    margin-bottom: 80px;
+}
+#subCateg{
+    padding-top: 20px;
+    background-color: white;
+    padding-left: 35px;
+   padding-right: 15px;
+}
+.underline_hover{
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 1px;
+    position: relative;
+}
+.underline_hover::before{
+  content: "";
+  position: absolute;
+  left:0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(92, 83, 83);
+  transition: width;
+}
+.underline_hover:hover::before{
+    width:100%;
+}
+a{
+    text-decoration:none;
+}
+#products{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    gap:25px 20px;
+   justify-content: center;
+}
+#products > div{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}
+#img{
+    width:100%;
+}
+#title{
+    display: grid;
+    grid-template-columns:3fr 1fr ;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+#rating{
+    font-size: 12px;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(15, 218, 15);
+    border-radius: 5px;
+    width: auto;
+    justify-content: center;
+    height: 15px;
+    margin-right: 12px;
+    padding: 1px;
+    padding-left: 8px;
+}
+#hr{
+    border-top: 1px solid rgb(228, 222, 222);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;     
+} 
+#price{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(99, 89, 89);
+}
+#shipping{
+    margin-top:0px;
+    margin-bottom:10px;
+    padding-left:10px;
+    color: #008A00;
+    font-size: 12px;
+}
+a{
+    color: rgb(70, 67, 67);
+}

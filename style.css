@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+*{
+     font-family: 'Lato', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+}
+/* body{
+    height: 10000px;
+
+}
+ */
+
+
+
+
+
+/* headerSection */
+
+.inr-sign::before{content:"\20B9"}
+
+#searchbtn{
+border:none;
+margin-left: -3px ;
+}
+#searchbtn>i{
+    padding: 6.5px 8px;
+    padding-top: 7.1px;
+    background-color: orange;
+    color: white;
+
+    
+}
+#product{
+    margin-top: 180px;
+}
+
+header{
+    height:auto;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:2px 2px 2px rgb(206, 202, 202) ;
+
+
+}
+
+#topBlankBar{
+    height: 30px;
+    width: 100%;
+     background-color: #fffbf5; 
+    
+    /* background-color: red; */
+}
+#heading{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding-left: 55px;
+}
+
+.headerBox2{
+    height: 40px;
+    width: 100%;
+}
+#imgLogo{
+    width: 185px;
+    height: 69px;
+    padding: 12px 0 0 0;
+
+}
+.searchBox>input{
+    width: 309px;
+    outline: none;
+
+    padding: 1px 2px 1px 20px;
+    margin-left: 20px;
+    height: 27px;
+    border: .5px solid lightgray;
+    /* background-color: ; */
+}
+.searchBox{
+    padding: 1px 2px 1px 14px;
+    height: 27px;
+}
+#sideheader{
+    display: flex;
+    font-size: 14px;
+    color: #474747;
+    position: absolute;
+    right: 100px;
+
+}
+
+#loginDiv{
+    padding: 0 10px;
+}
+#loginDiv>h5{
+    font-size: 14px;
+}
+.logon{
+    font-size: 12px;
+    color: #474747;
+}
+
+#sellerCorner{
+    margin: 0 0 10px 0;
+    padding: 0 20px 0 10px;
+}
+#sellerCorner>a{
+    color: #474747;
+    font-size: 11px;
+
+}
+.headerBox2{
+    display: flex;
+    padding: 0 15px;
+    padding-left: 100px;
+}
+#category{
+font-size: 13px;
+padding: 0 75px;
+padding-top: 3px;
+cursor: pointer;
+
+}
+
+.bestD>a{
+font-size: 11px;
+padding: 0 25px;
+color: black; 
+}
+
+/* hide navigation bar */
+
+#newHead{
+    /* border: 1px solid black; */
+    position: fixed;
+    height: auto;
+    top: 175px;
+    width: 70%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    left: 0;
+    right: 0;
+   
+}
+
+ 
+#hideNav{
+    display: none;
+    height: 100%;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white ;
+right: 600px;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 4px 6px 6px; ;
+}
+
+
+
+#hideNav>h4{
+    position: sticky;
+    margin: 20px;
+    left: 200px;
+    color: #ababab ;
+    /* border: 1px solid red; */
+    padding-left: 200px;
+}
+
+#hideNav  > main{
+    display: flex;
+}
+
+
+#service{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 30px;
+    /* padding: 40px 15px; */
+    line-height: 2.5;
+    /* margin: ;
+     */
+     /* border: 1px solid black; */
+}
+#service>ul{
+    list-style-type:none ;
+}
+#service>ul>li>a, .menWomen>a{
+    color: #333333;
+    font-size: 12px;
+
+}
+.menWomen{
+    padding: 20px 70px;
+
+}
+.menWomen > h3{
+    margin: 10px 0;
+    font-size: 14px;
+
+}
+ 
+
+
+
+#innerCon{
+    display: flex;
+
+}
+#innerCon > img{
+    width: 100%;
+    height: 100%;
+}
+
+#container{
+    /* margin:154px  40px 0 40px; */
+    border: 1px solid blue;
+
+}
+
+
+/* New Arrivals */
+#newArrival{
+    margin: 20px ;
+}
+
+#name-rating>p{
+    color: #455A64;
+    font-size: 14px;
+}
+
+#name-rating{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    height: 45px;
+}
+
+#rating-icon{ 
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(15, 218, 15);
+    border-radius: 5px;
+    width: auto;
+    height: 15px;
+    margin-right: 12px;
+    padding: 2px 12px ;
+    padding-bottom: 15px;
+    /* padding-left: 8px; */
+}
+
+.priceOf{
+    color: #424242;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.pricePara{
+font-size:12px;
+color:#008A00;
+display:inline-block;
+padding-left: 15px;
+width:100%;
+/* border: 1px solid blue; */
+}
+
+.priceBox{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+/* moving top images */
+
+.slider{
+    overflow: hidden;
+    
+}
+.slider figure{
+    display: flex;
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 15s slider infinite;
+}
+.slider figure img{
+    width: 20%;
+    float: left;
+    
+}
+@keyframes slider {
+    0%{
+        left: 0;
+        
+    }
+    20%{
+        left: 0;
+
+    }
+    25%{
+        left: -100%;
+
+    }
+    45%{
+        left: -100%;
+
+    }
+    50%{
+        left: -200%;
+
+    }
+    70%{
+        left: -200%;
+
+    }
+    75%{
+        left: -300%;
+
+    }
+    95%{
+        left: -300%;
+
+    }
+    100%{
+        left: -400%;
+
+    }
+}
+
+
+/* Scrolling Functionality */
+
+#movingPro, #mobileAccess,#toyCont,#bottlediv,#improveHome,#bdevice,#blueSports,#chargeCnt,#speakerWireL ,  #newWatch , #mensNewW,#ourElectron{
+    overflow-x: hidden;
+}
+
+
+
+#window, #mobilesCart ,#toyCnt,#bottles,#improveC,#deviceB,#sportsBlue, #wirelessC , #wirelessSpeak , #smartW ,#electricDev, #mensW{
+
+
+    display: flex;
+    flex-direction: row;
+    margin:0 50px ;
+}
+
+#window>div, #mobilesCart>div ,#toyCnt>div ,#bottles>div ,#improveC>div,#deviceB>div, #sportsBlue>div, #wirelessC>div, #wirelessSpeak>div , #smartW > div , #mensW>div , #electricDev>div{ 
+     padding: 2px;
+     margin:10px 0 10px  23px;  
+    
+    
+    }
+
+    #newArrHeading ,.wCharger, .bluetoothC,.fastMovingP,.mobileTitle,.toy, .bottleTitle,
+.homeI, .sportB , .speakerT , .watchTitle , .menWT ,.giftLogo, .eleTitle{
+    font-size: 30px;
+    color: #333333;
+    font-weight: 300;
+    margin: 25px 0;
+    margin-left: 15px;
+    padding: 10px 0 10px 30px ;
+    
+}
+
+#arrivaldata{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    gap: 20px;
+    padding: auto;
+    margin: 0 100px;
+    /* display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: nowrap; */
+}
+#arrivaldata>div , #window>div ,#mobilesCart>div, #toyCnt>div ,#bottles>div , #improveC>div,#deviceB>div , #sportsBlue>div,#wirelessC>div , #wirelessSpeak>div , #smartW > div , #mensW > div , #electricDev > div{
+    /* margin: 20px; */
+    height: 410px;
+    width: 300px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+     border-radius: 2px;
+     cursor: pointer;
+}
+
+/*             Important */
+
+    #mobilesCart>div>img,#arrivaldata>div>img ,  #window>div>img ,#toyCnt > div> img ,#bottles>div>img   , #improveC>div>img, #deviceB>div>img, #sportsBlue>div>img, #wirelessC>div>img , #wirelessSpeak>div>img , #smartW > div > img , #mensW >div> img , #electricDev> div > img{
+    width: 295px;
+    height: 295px;
+    padding: 10px 0 ;
+}
+
+
+
+
+/* Scrolling Functionality End*/
+
+
+.gift1,.gift2{
+    display: flex;
+    /* width: 100%; */
+    justify-content: center;
+}
+.gift1>div , .gift2>div{
+    width: 30%;
+    padding: 20px ;
+    padding-top: 25px;
+}
+
+.gift1>div>img , .gift2>div>img{
+    width: 100%;
+    height: 150px;
+}
+
+#asSeenOn{
+
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    overflow: hidden;
+    /* border: 1px solid yellow; */
+
+}
+/* #as{
+    width: 80%;
+} */
+
+#asSeenOn > div{
+
+    /* border: 1px solid green; */
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    
+    margin:10px 0 10px  23px;  
+}
+#asSeenOn > div> img{
+    width: 100px;
+    margin: auto;
+    /* border: 1px solid pink; */
+    margin-bottom: 15px;
+    border-radius: 50px;
+    height: 100px;
+
+}
+
+#asSeenOn > div> h4{
+font-size: 18px;
+margin: 10px 0;
+color:#333333;
+/* border: 1px solid black; */
+}
+#asSeenOn > div> p{
+    color: #f7941d;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+/* border: 1px solid blue; */
+
+
+}
+#cart>span{ 
+     font-size: 20px;
+}
+
+#cartLogo{
+    
+    color: orange;
+    font-size: 25px;
+     
+}
+
+footer{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+#footer2{
+    margin:0 80px;
+    padding: 20px 5px 15px 5px;
+
+}
+
+#footer2>.p1{
+    color: #f3921f;
+    margin: 20px 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+
+}
+#footer2>.p2{
+    color:#808080 ;
+    margin: 0 0 10px 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+#blank{
+    margin-top: -10px;
+    width: 100%;
+    height: 30px;
+    background:#dbdbdb;
+    color: #666666;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+.footerParent {
+    width: 100%;
+    height: 200px;
+    background-color: #f2f2f2;
+    font-family: sans-serif;
+    margin: auto;
+    /* border: 1px solid pink; */
+  }
+  
+  
+  .child {
+    width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    /* border: 1px solid yellow; */
+  }
+  
+  .info {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    margin-right: 30px;
+  }
+  .info h2 {
+    color: #f7941d;
+    font-size: medium;
+    margin-bottom: 10px;
+    font-weight: 400;
+    /* font-family: "Inter", sans-serif; */
+  }
+  .info li a {
+    color: #666;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  .info li {
+    list-style: none;
+  }
+  .quick {
+
+    width: 30%;
+    height: 100%;
+    margin: 20px 40px;
+    /* border: 1px solid black; */
+    text-align: left;
+
+  }
+  .quick h2 {
+    /* margin: 40px; */
+    text-align: left;
+    /* border: 1px solid green; */
+  }
+  .quick a {
+      /* border: 1px solid blue; */
+    color: black;
+    font-weight: 500;
+    font-size: small;
+  }
+  .paymentmethod {
+    background: url("https://www.meanbuy.com/assets/img/india/icons/paymethods22.png");
+    width: 275px;
+    height: 40px;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .policy {
+    background: #dbdbdb;
+    line-height: 30px;
+    height: 30px;
+    text-align: right;
+    color: #666;
+    font-size: small;
+    padding-right: 20px;
+  }
+  hr{
+      margin: 0 40px;
+      color: #666;
+  }

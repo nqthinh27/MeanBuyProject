@@ -1,0 +1,143 @@
+#paym {
+  display: none;
+  position: fixed;
+  left: 20px;
+  top: 50px;
+  bottom: 50px;
+  right: 15px;
+  z-index: 100;
+}
+.father {
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  width: 350px;
+  background-color: white;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 5px;
+}
+.father h4 {
+  margin-bottom: 5px;
+  margin-top: 20px;
+  font-size: small;
+}
+h2 {
+  font-size: 14px;
+}
+#submit {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  font-weight: 700;
+  background-color: #f7941d;
+  border: 2px solid #f7941d;
+  border-radius: 0px;
+  color: white;
+  font-size: large;
+}
+#submit:hover {
+  opacity: 0.9;
+}
+#products {
+  width: 243px;
+  height: 30px;
+}
+#valid1 {
+  display: flex;
+}
+#valid2 {
+  display: flex;
+}
+#valid1 > div,
+#valid2 > div:first-child {
+  margin-right: 20px;
+}
+#myexpdate,
+#mycvv {
+  width: 60px;
+  height: 25px;
+  /* margin-right: 20px; */
+  border: 0;
+  border-bottom: 1px solid #ebedf0;
+  outline: none;
+}
+#mycardname,
+#mycard {
+  width: 200px;
+  height: 25px;
+  border: 0;
+  border-bottom: 1px solid #ebedf0;
+  outline: none;
+}
+#myotp {
+  width: 150px;
+  height: 25px;
+}
+
+/* pop pay------------------------------------------ */
+
+.head {
+  width: 100%;
+  height: 110px;
+  background-color: #f7941d;
+}
+.head img {
+  width: 100px;
+  margin: 10px 0px 10px 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: white;
+}
+.head > div:nth-child(2) {
+  position: relative;
+  bottom: 100px;
+  left: 140px;
+  color: white;
+  font-size: large;
+  width: fit-content;
+  line-height: 10px;
+}
+.head2 {
+  width: 100%;
+  height: 35px;
+  background-color: #ce760b;
+  opacity: 0.8;
+}
+.mid {
+  padding: 20px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+
+.savecard {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: small;
+}
+.savecard a {
+  margin-left: 20px;
+}
+#lang {
+  outline: none;
+  background-color: #ce760b;
+  height: 100%;
+  color: white;
+  border: none;
+  width: 80px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+input[placeholder] {
+  font-size: 14px;
+}
+.cross {
+  position: relative;
+  left: 180px;
+  bottom: 90px;
+  color: white;
+  background-color: #f7941d;
+  border: none;
+  font-size: medium;
+}

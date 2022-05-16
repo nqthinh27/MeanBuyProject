@@ -1,0 +1,306 @@
+
+body{
+    font-family: Lato,sans-serif;
+    color: #455a64;
+}
+
+.top{
+    margin: 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #fffbf5;
+    color: #474747;
+
+}
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+
+}
+#topHr{
+    /* background-color:#f38f2f; */
+    border-top: 1px solid #f38f2f;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 0;
+}
+#parent{
+     display: flex;
+    justify-content: space-between;
+    /* background-color: ;  */
+    margin: auto;
+    height: 75px;
+    background: #fff;
+    padding-top: 0;
+    position: relative;
+    max-width: 100%;
+}
+.left img{
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.right{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 50px 10px 10px;
+    
+}
+.right p{
+    font-size: small;
+
+}
+.user i{
+    width: fit-content;
+    height: 30px;
+    margin-left: 2px;
+    font-size: larger;
+    color: #f38f2f;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+.user{
+    margin-left: 50px;
+}
+.user span{
+    position: relative;
+    top: 10px;
+    font-size: smaller;
+    color: black;
+}
+
+.user h4{
+    margin-top: 5px;
+    font-size: small;
+    font-weight: 800;
+    padding-left: 10px;
+    
+}
+
+
+/* body part css-------------- */
+
+#guard{
+    padding-bottom: 100px;
+}
+
+ .outerdiv{
+     margin-top: 150px;
+    margin-left: 80px;
+    display: flex;
+ }
+ .outerdiv h6{
+     line-height: 0;
+ }
+ 
+
+a{
+    text-decoration: none;
+    color: #428bca;
+}
+.para{
+    font-size: smaller;
+}
+h6{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+.input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: #fff7dc;
+    border-bottom: 1px solid #f38f2f;
+    width: 500px;
+    height: 25px;
+    outline: none;
+}
+.code{
+    width: 200px;
+
+}
+#applycode{
+   
+    width: 100px;
+    height: 27px;
+    border-radius: 0px;
+    background-color: #f7941d;
+    border: 2px solid #f7941d;
+}
+input[type='checkbox']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid #f7941d;
+    background-color: white;
+}
+
+input[type='checkbox']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 0;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #f7941d;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+.confirm{
+    margin-top: 10px;
+    
+}
+.confirm>input{
+    margin-left: 0;
+    
+}
+.address{
+    display: flex;
+    
+}
+
+.addressInput{
+    width: 243px;
+}
+#state{
+    outline: 0px;
+    
+}
+.address>div:first-child{
+    margin-right: 10px;
+}
+#state,#City{
+    width: 246px;
+}
+
+/* total div-------------------------------- */
+
+
+.total{
+    margin-left: 50px;
+}
+
+.upperTotal{
+    background-color: #efefef;
+    height: max-content;
+    width: 550px;
+    padding: 10px;
+    font-size: 15px;
+    box-sizing: border-box;
+    
+}
+.edit{
+    color: #428bca;
+    font-size: medium;
+}
+.upperTotal p{
+    margin: 2px;
+    font-weight: 700;
+}
+
+.shipdate{
+    color: #f38f2f;
+}
+.makeorange{
+    color: #f38f2f;
+}
+
+.subtotal{
+    width: 550px;
+    height: 250px;
+    border: 1px solid gray;
+    font-weight: 700;
+    padding: 20px;
+    font-size: small;
+    box-sizing: border-box;
+}
+.final{
+    color: #474747;
+   
+   
+}
+#subtotl{
+    color: black;
+}
+#GrandTotal{
+    color: black;
+}
+#priceTotal{
+    margin-left: 100px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+}
+.logo+div{
+    text-align: center;
+    line-height: 5px;
+}
+
+.orangebar {
+    height: 3px;
+    width: 40px;
+    margin: 25px auto;
+    background: #F68815;
+}
+
+
+
+/* ----------------------payment--------------------------------------- */
+#payment{
+    margin-left: 80px;
+}
+.billing{
+    display: flex;
+    padding-left: 80px;
+    width: fit-content;
+    height: 100px;
+}
+.billing>div{
+   width :80px;
+   height: 80px;
+   margin-right: 30px;
+  
+
+}
+.billing>div:hover{
+    border-bottom: 5px solid #f7941d;
+    
+}
+.billing div img{
+    width: 100%;
+}
+#paynow{
+    width: 400px;
+    height: 35px;
+    border-radius: 0px;
+    background-color: #f7941d;
+    border: 2px solid #f7941d;
+}
+.pay{
+    margin-left: 80px;
+    width: fit-content;
+    text-align: center;
+    margin-top: 20px;
+}
+#paynow{
+    color: white;
+
+}

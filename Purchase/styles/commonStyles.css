@@ -1,0 +1,210 @@
+#loginParent{
+  display: flex;
+}
+input[placeholder]{
+  font-size: large;
+}
+.google{
+  display: flex;
+  margin-bottom: 50px;
+}
+.fa-brands{
+  font-size: large;
+  margin-top: 5px;
+  margin-right: 10px;
+
+}
+.google>div:nth-child(1){
+    font-size: 13px;
+    line-height: 16px;
+    padding: 0 6px;
+    background-color: #4865b5;
+    color: white;
+    width: fit-content;
+    height: 30px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    margin-right: 50px;
+}
+.google>div a{
+  color: white;
+}
+.google>div:nth-child(2){
+  font-size: 13px;
+  line-height: 16px;
+  padding: 0 6px;
+  background-color: #4285f4;
+  color: white;
+  width: 150px;
+  height: 30px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.google>div:nth-child(2) img{
+  width: 20px;
+  background-color: white ;
+  border-radius: 2px;
+  margin-right: 10px;
+}
+.loginForm{
+  font-family: 'Montserrat', sans-serif;
+  /* border: 1px solid red; */
+  width: 60%;
+  border-radius: 5px;
+  margin-top: 130px;
+  margin-left: 10px;
+  margin-bottom: 100px;
+}
+.loginForm h4{
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+h2{
+  color: #f7941d;
+}
+#submit{
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: large;
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  background-color: #f7941d;
+  border: 2px solid #f7941d;
+}
+#submit:hover{
+  border: 2px solid #fff7dc;
+}
+#myname,#myemail,#mymobile,#mypassword,#checkpassword{
+    text-align: left;
+    padding-left: 5px;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 0;
+    display: block;
+    padding: 0.1em 0 1px 0;
+    outline: 0;
+    margin: 0;
+    background: 0;
+}
+#products{
+  width: 243px;
+  height: 30px;
+}
+#valid{
+  display: flex;
+}
+#myexpdate,#mycvv{
+  width: 50px;
+  height: 25px;
+  margin-right: 20px;
+}
+#mycardname,#mycard{
+   width: 235px;
+   height: 25px;
+}
+#myotp{
+  width: 150px;
+  height: 25px;
+}
+
+.carttotal{
+    margin: auto;
+    margin-top: 150px;
+    background: #fff;
+    border: 1px solid lightgrey;
+    margin-bottom: 15px;
+    font-family: Lato,sans-serif;
+    color: #455a64;
+    width: 30%;
+    height: fit-content;
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 0;
+}
+
+.carttotal>div:nth-child(1){
+    height: 60px;
+    background: #fff;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    font-size: medium;
+    border-bottom: 1px solid lightgrey;
+}
+.carttotal>div:nth-child(2){
+   border-bottom: 1px solid lightgrey;
+   
+}
+.carttotal>div:nth-child(2)>h5:last-child{
+  color: green;
+ 
+}
+.carttotal>div:nth-child(2)>h5:not(:first-child){
+  margin-top: -10px;
+ 
+}
+.editCart{
+  font-weight: 500;
+  font-size: large;
+  color: #f7941d;
+  width: 100%;
+  height: 40px;
+  border-radius: 0px;
+  background-color: white;
+  border: 1px solid #f7941d;
+}
+.editCart a{
+  text-decoration: none;
+  color: inherit;
+}
+.editCart:hover{
+  background-color: #fff7dc;
+}
+.brandlogo img{
+  width: 100px;
+}
+.orangebar {
+  height: 3px;
+  width: 40px;
+  margin: 25px auto;
+  background: #F68815;
+}
+.wrapSignup{
+  width: fit-content;
+  position: relative;
+  display: block;
+ left: 1000px;
+ bottom: 250px;
+ text-align: center;
+ line-height: 5px;
+  
+}
+
+.wraplogin{
+  width: fit-content;
+  position: relative;
+  display: block;
+ left: 1000px;
+ bottom: 150px;
+ text-align: center;
+ line-height: 5px;
+  
+}
+.checkif{
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #455a64;
+  margin-top: 40px;
+}
+.checkif p{
+  margin: 0 0 10px;
+  font-size: small;
+}

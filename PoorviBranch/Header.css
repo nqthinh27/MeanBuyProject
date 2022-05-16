@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+
+*{
+     font-family: 'Lato', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+}
+/* body{
+    height: 10000px;
+
+}
+ */
+
+
+
+
+
+/* headerSection */
+
+.inr-sign::before{content:"\20B9"}
+
+#searchbtn{
+border:none;
+margin-left: -3px ;
+}
+#searchbtn>i{
+    padding: 6.5px 8px;
+    padding-top: 7.1px;
+    background-color: orange;
+    color: white;
+
+    
+}
+#product{
+    margin-top: 180px;
+}
+
+header{
+    height:auto;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow:2px 2px 2px rgb(206, 202, 202) ;
+
+
+}
+
+#topBlankBar{
+    height: 30px;
+    width: 100%;
+     background-color: #fffbf5; 
+    
+    /* background-color: red; */
+}
+#heading{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    padding-left: 55px;
+}
+
+.headerBox2{
+    height: 40px;
+    width: 100%;
+}
+#imgLogo{
+    width: 185px;
+    height: 69px;
+    padding: 12px 0 0 0;
+
+}
+.searchBox>input{
+    width: 309px;
+    outline: none;
+
+    padding: 1px 2px 1px 20px;
+    margin-left: 20px;
+    height: 27px;
+    border: .5px solid lightgray;
+    /* background-color: ; */
+}
+.searchBox{
+    padding: 1px 2px 1px 14px;
+    height: 27px;
+}
+#sideheader{
+    display: flex;
+    font-size: 14px;
+    color: #474747;
+    position: absolute;
+    right: 100px;
+
+}
+
+#loginDiv{
+    padding: 0 10px;
+}
+#loginDiv>h5{
+    font-size: 14px;
+}
+.logon{
+    font-size: 12px;
+    color: #474747;
+}
+
+#sellerCorner{
+    margin: 0 0 10px 0;
+    padding: 0 20px 0 10px;
+}
+#sellerCorner>a{
+    color: #474747;
+    font-size: 11px;
+
+}
+.headerBox2{
+    display: flex;
+    padding: 0 15px;
+    padding-left: 100px;
+}
+#category{
+font-size: 13px;
+padding: 0 75px;
+padding-top: 3px;
+cursor: pointer;
+
+}
+
+.bestD>a{
+font-size: 11px;
+padding: 0 25px;
+color: black; 
+}
+
+/* hide navigation bar */
+
+#newHead{
+    /* border: 1px solid black; */
+    position: fixed;
+    height: auto;
+    top: 175px;
+    width: 70%;
+    position: fixed;
+    background-color: white;
+    z-index: 100;
+    left: 0;
+    right: 0;
+   
+}
+
+ 
+#hideNav{
+    display: none;
+    height: 100%;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: white ;
+right: 600px;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 4px 6px 6px; ;
+}
+
+
+
+#hideNav>h4{
+    position: sticky;
+    margin: 20px;
+    left: 200px;
+    color: #ababab ;
+    /* border: 1px solid red; */
+    padding-left: 200px;
+}
+
+#hideNav  > main{
+    display: flex;
+}
+
+
+#service{
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 30px;
+    /* padding: 40px 15px; */
+    line-height: 2.5;
+    /* margin: ;
+     */
+     /* border: 1px solid black; */
+}
+#service>ul{
+    list-style-type:none ;
+}
+#service>ul>li>a, .menWomen>a{
+    color: #333333;
+    font-size: 12px;
+
+}
+.menWomen{
+    padding: 20px 70px;
+
+}
+.menWomen > h3{
+    margin: 10px 0;
+    font-size: 14px;
+
+}

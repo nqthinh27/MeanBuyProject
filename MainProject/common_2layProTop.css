@@ -1,0 +1,29 @@
+.proTop{
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    margin-bottom: -10px;
+    margin-top: -20px;
+    display: flex;
+    justify-content: space-between;
+}
+.proTop>:first-child>a{
+    font-style: italic;
+    color: rgb(0, 0, 0);
+}
+.proTop>:last-child{
+    display: flex;
+    background-color: white;
+    border: 1px solid rgb(175, 169, 169);
+    padding: 5px 5px 5px 15px;
+    color: rgb(7, 6, 6);
+}
+.fa-angle-right{
+    color: rgb(218, 211, 211);
+}
+.fa-angle-down{
+  font-size:30px;
+    color: rgb(0, 0, 0);
+    margin-top: -5px;
+}

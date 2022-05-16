@@ -1,0 +1,35 @@
+#filter{
+    padding-left: 35px;
+    padding-right: 15px;
+    padding-top: 10px;
+    color: rgb(93, 94, 95);
+  }
+  h4{
+      padding-bottom: 20px;
+  }
+  hr+button{
+      margin-top: 5px;
+  }
+  .dropdown{
+      font-size: 20px;
+      padding-left: 0px;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      color: rgb(84, 85, 87);
+  }
+
+  .fa-caret-down{
+      float: right;
+      padding: 0px 0px 20px 65px;
+      margin-top: -3px;
+      color: rgba(212, 216, 216, 0.678);
+  }
+.dropdown-container{
+    display: none;
+    padding-left: 10px;
+    outline: none;
+}
+.dropdown-container a{
+    color: black;
+}

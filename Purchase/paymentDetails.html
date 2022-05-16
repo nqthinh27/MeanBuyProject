@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Details</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./PurchaseAsset/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./PurchaseAsset/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./PurchaseAsset/favicon-16x16.png">
+  <link rel="manifest" href="./PurchaseAsset/site.webmanifest">
+  <link rel="shortcut icon" href="./PurchaseAsset/favicon.ico" type="image/ico">
+
+  <link rel="stylesheet" href="./styles/payStyles.css" />
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/payment.css">
+  <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="navbar">
+    <div id="parent">
+      <div class="left">
+        <a href="../index.html"><img src="../CommonAsset/baselogo.png" alt="meanbuy logo" /></a>
+      </div>
+      <div class="right">
+        <p>Seller's corner |</p>
+        <p>Feedback |</p>
+        <p>Delivery Info</p>
+        <div class="user">
+          <a href="./Login/signup.html"><i class="fa-regular fa-user icon"></i><span>LOGIN / SIGNUP</span></a>
+          <h4>WELCOME GUEST</h4>
+        </div>
+      </div>
+    </div>
+    <hr id="topHr" />
+  </nav>
+
+  <!-- body part----------------------- -->
+  <div id="guard">
+    <div class="outerdiv">
+      <div class="details">
+        <h4>Your Email & Phone Number</h4>
+        <!-- <p class="para">
+          For full account access please
+          <a class="aUser" href="login.html">Login </a><a href="#">or </a><a class="aUser" href="signup.html">Sign
+            Up</a>
+        </p> -->
+
+        <h6>Email Adress</h6>
+        <!-- <input id="email" class="input" type="email" placeholder="Email Adress" /> -->
+        <p class="email para"></p>
+        <h6>Phone Number</h6>
+        <input id="phone" class="input" type="text" placeholder="Phone Number" />
+        <div class="confirm">
+          <input id="checkbox" type="checkbox" />
+          <span class="para">
+            I agree to be contacted through Whatsapp for Order Updates</span>
+        </div>
+        <div class="shipDetails">
+          <h5>Shipping Details</h5>
+          <h6>Name</h6>
+          <input type="text" class="input" id="name" placeholder="Name" />
+          <div class="address">
+            <div class="address1">
+              <h6>Address 1</h6>
+              <input type="text" class="input addressInput" id="address1" placeholder="Address 1" />
+            </div>
+            <div>
+              <h6>Address 2</h6>
+              <input type="text" class="input addressInput" id="address2" placeholder="Address 2" />
+            </div>
+          </div>
+
+          <div class="address">
+            <div>
+              <h6>State</h6>
+              <select name="state" id="state" class="input addressInput">
+                <option value="" selected="selected">Select State</option>
+                <option value="AP">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CT">Chhattisgarh</option>
+                <option value="GA">Goa</option>
+                <option value="GJ">Gujarat</option>
+                <option value="HR">Haryana</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="JK">Jammu & Kashmir</option>
+                <option value="JH">Jharkhand</option>
+                <option value="KA">Karnataka</option>
+                <option value="KL">Kerala</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="MN">Manipur</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="NL">Nagaland</option>
+                <option value="OR">Odisha</option>
+                <option value="PB">Punjab</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="SK">Sikkim</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="TS">Telangana</option>
+                <option value="TR">Tripura</option>
+                <option value="UK">Uttarakhand</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="WB">West Bengal</option>
+                <option value="AN">Andaman & Nicobar</option>
+                <option value="CH">Chandigarh</option>
+                <option value="DN">Dadra and Nagar Haveli</option>
+                <option value="DD">Daman & Diu</option>
+                <option value="DL">Delhi</option>
+                <option value="LD">Lakshadweep</option>
+                <option value="PY">Puducherry</option>
+              </select>
+            </div>
+            <div>
+              <h6>City</h6>
+              <input type="text" class="input addressInput" id="city" placeholder="City" />
+            </div>
+          </div>
+          <div class="address">
+            <div>
+              <h6>Country</h6>
+              <input type="text" class="input addressInput" id="Country" placeholder="Country" />
+            </div>
+            <div>
+              <h6>Pin Code</h6>
+              <input type="text" class="input addressInput" id="PinCode" placeholder="Pin Code" />
+            </div>
+          </div>
+        </div>
+        <h5>Billing Details</h5>
+        <input id="checkbox" type="checkbox" /><span class="para">
+          Same as Shipping Address</span>
+      </div>
+
+      <div class="total">
+        <div class="upperTotal">
+          <table class="price">
+            <tbody>
+              <tr>
+                <td>
+                  <p><span class="qty">2</span> x <span class="productname">Dual Movt Quartz Wristwatch - Black</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p><span class="shipdate">Delivery Date: </span>May 16, 2022</p>
+                </td>
+                <td>
+                  <p id="priceTotal"><span id="priceLogo"><i class="fa fa-inr"></i></span><span class="prodprice">0</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="edit">Edit Cart</p>
+        <div class="subtotal">
+          <p><span class="final">Subtotal : </span><span id="priceLogo"><i class="fa fa-inr"></i><span
+                id="subtotl">0</span></p>
+          <p class="shipdate">Shipping: Free</p>
+          <p>Total: <span id="priceLogo"><i class="fa fa-inr"></i><span id="GrandTotal">0</span></p>
+          <p>Get up to <i class="fa fa-inr"></i>500.00 OFF on your First Time Prepaid Order (COD Excluded) with coupon
+            <span class="makeorange">PREPAID</span>.</p>
+          <p>Got a promotional Code? Use Below:</p>
+          <div><input class="input code" id="coupon" type="text">
+            <button id="applycode">Apply Code</button>
+          </div>
+        </div>
+        <div class="logo"><img src="./PurchaseAsset/mb_square.png" alt="meanbuy">
+        </div>
+        <div>
+          <h3>Our Shop. Your Price.</h3>
+          <h5>Online Shopping Redefined.</h5>
+        </div>
+
+        <div class="orangebar"></div>
+      </div>
+
+    </div>
+    <h5 id="payment">Payment Details</h5>
+    <div class="billing">
+      <div id="cardPay"><img src="./PurchaseAsset/cardpay.png" alt="card"></div>
+      <div id="netbanking"><img src="./PurchaseAsset/netbanking.png" alt="netbanking"></div>
+      <div id="emipay"><img src="./PurchaseAsset/emipay.png" alt="emi"></div>
+      <div id="upipay"><img src="./PurchaseAsset/upipay.png" alt="upi"></div>
+    </div>
+    <div class="pay">
+      <p class="para">We accept all major credit and debit cards of Indian and International banks.</p>
+      <button id="paynow">PAY NOW</button>
+    </div>
+  </div>
+
+ <!-- body part--------------------------------------------------- -->
+
+
+ <div id="paym">
+  <div class="father">
+    <div class="head">
+      <div>
+      <img
+        src="./PurchaseAsset/mb_square.png"
+        alt="logo"
+      />
+    </div>
+    <div class="pricing">
+      <div>
+        <h3>MeanBuy</h3>
+         <h3><i class="fa fa-inr"></i><span id="pricetotl">0</span></h3>
+      </div>
+      <div><button class="cross"><i class="fa fa-times" aria-hidden="true"></i></button></div>
+    </div>
+    </div>
+    <div class="head2">
+      <select id="lang">
+        <option value="eng">English</option>
+        <option value="hindi">हिंदी</option>
+        <option value="বাংলা">বাংলা</option>
+        <option value="मराठी">मराठी</option>
+        <option value="ગુજરાતી">ગુજરાતી</option>
+        <option value="தமிழ்">தமிழ்</option>
+        <option value="తెలుగు">తెలుగు</option>
+      </select>
+    </div>
+    <div id="paymentform">
+      <div class="mid">
+        <div><h2>Add New Card</h2></div>
+        <div id="valid1">
+          <div>
+            <h4>Card Number</h4>
+            <input id="mycard" type="text" placeholder=" Card Number" />
+          </div>
+          <div>
+            <h4>Exp</h4>
+            <input id="myexpdate" type="text" placeholder="Expiry" />
+          </div>
+        </div>
+        <div id="valid2">
+          <div>
+            <h4>Your name</h4>
+            <input
+              id="mycardname"
+              type="text"
+              placeholder="Card Holder's name"
+            />
+          </div>
+          <div>
+            <h4>CVV</h4>
+            <input type="text" id="mycvv" placeholder="CVV" />
+          </div>
+        </div>
+        <div class="savecard">
+          <input id="saveCard" type="checkbox" /><label for="checkbox"
+            >Save card securely for future payments</label
+          >
+          <h4><a href="#">Know more</a></h4>
+        </div>
+      </div>
+      <div>
+        <button id="submit">PAY</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="footerParent">
+      <div class="child">
+        <div class="info">
+          <div class="quick">
+            <h2>CORPORATE</h2>
+            <ul>
+              <li><a href="https://www.meanbuy.com/merchant/signup">Sell With Us</a></li>
+              <li><a href="https://www.meanbuy.com/careers">Career Opportunities</a></li>
+              <li><a href="https://www.meanbuy.com/sitemap">Sitemap</a></li>
+            </ul>
+          </div>
+
+          <div class="quick">
+            <h2>OUR POLICIES</h2>
+            <ul>
+              <li><a href="https://www.meanbuy.com/precautions">Covid-19 Precautions</a></li>
+              <li><a href="https://www.meanbuy.com/about/our_promise">Our Promise</a></li>
+              <li><a href="https://www.meanbuy.com/terms/terms_and_conditions">Terms & Conditions</a></li>
+              <li><a href="https://www.meanbuy.com/terms/privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="quick">
+            <h2>HELP</h2>
+            <ul>
+              <li><a href="https://www.meanbuy.com/howitworks">How MeanBuy Works</a></li>
+              <li><a href="https://www.meanbuy.com/account/my_orders">My Orders</a></li>
+              <li><a href="https://www.meanbuy.com/shipping_return/returns">Exchanges, Returns and Refunds</a></li>
+              <li><a href="https://www.meanbuy.com/contact">Contact Us</a></li>
+              <li><a href="https://www.meanbuy.com/faq">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="quick">
+            <h2>SELL WITH US</h2>
+           <ul>
+              <li><a href="https://www.meanbuy.com/sell">General Information</a></li>
+              <li><a href="https://www.meanbuy.com/merchant/signup">Signup</a></li>
+           </ul>
+          </div>
+        </div>
+        <div class="paymentmethod"></div>
+      </div>
+    </div>
+    <div class="policy">© MeanBuy.com. All Rights Reserved</div>
+  </footer>
+</body>
+
+</html>
+
+<script src="./script/payment.js"></script>
