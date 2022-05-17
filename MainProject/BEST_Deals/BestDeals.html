@@ -80,7 +80,7 @@
                         <!-- <i class="fa-solid fa-caret-down"></i> --> 
                  </div>
                  <div class="bestD"><a href="./BestDeals.html">Best Deals</a></div>
-                 <div class="bestD"><a href="../../RudraB/ShopByBrand.html">Shop by Brand</a></div>
+                 <div class="bestD"><a href="../../ShopByBrand/ShopByBrand.html">Shop by Brand</a></div>
                  <div class="bestD"><a href="../TRENDING/trending.html">
                     Trending
                  </a></div>
@@ -330,3 +330,78 @@ else {
 }
 </script>
 
+
+
+
+
+
+
+newArrivals.map(function(elem,index){
+         
+  var productDiv=document.createElement("div");
+  productDiv.setAttribute("id","arrivalProDiv")
+
+
+  var image= document.createElement("img");
+  image.setAttribute("src",elem.image);
+
+ var nameRating=document.createElement("div");
+ nameRating.setAttribute("id","name-rating")
+ 
+ 
+
+  var name=document.createElement("p");
+  name.innerText=elem.name;
+
+ var ratingIcon=document.createElement("div");
+ ratingIcon.setAttribute("id","rating-icon")
+
+  var rating=document.createElement("p");
+  rating.innerText=elem.rating;
+
+  var ratingStar=document.createElement("span")
+  ratingStar.setAttribute("class","fa fa-star");
+
+  ratingIcon.append(rating,ratingStar)
+  
+  nameRating.append(name,ratingIcon)
+
+  var hr=document.createElement("hr")
+  hr.style.backgroundColor="#ECEFF1"
+  hr.style.margin="0 1px 9px 1px"
+  hr.style.height="1px";
+ //  hr.style.padding="0 1px"
+
+
+ var priceBox=document.createElement("div")
+priceBox.setAttribute("class","priceBox")
+
+var symbol=document.createElement("span")
+symbol.setAttribute("class", "inr-sign")
+symbol.style.paddingLeft="10px"
+ 
+var price=document.createElement("p");
+ price.setAttribute("class","priceOf")
+ price.innerText=elem.price;
+
+priceBox.append(symbol,price)
+
+  var para=document.createElement("p");
+  para.setAttribute("class","pricePara")
+  para.innerText=elem.para;
+  
+   //<--3rd Layer Section-->//
+
+//========================================================================
+ productDiv.addEventListener("click", function(){
+     var displayLayer=[];
+     displayLayer.push(elem)
+     localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+ window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+})
+
+  productDiv.append(image,nameRating,hr,priceBox,para);
+  document.getElementById("arrivaldata").append(productDiv)
+//-=====================================================================
+})
