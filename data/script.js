@@ -32,6 +32,7 @@ var bluetoothEarphone=JSON.parse(localStorage.getItem("bluetoothEarphone"))
 var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
 
      newArrivals.map(function(elem,index){
+         
          var productDiv=document.createElement("div");
          productDiv.setAttribute("id","arrivalProDiv")
 
@@ -86,21 +87,20 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
          
           //<--3rd Layer Section-->//
 
+        productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
 
-    //     box.addEventListener("click", function(){
-    //         var displayLayer=[];
-    //         displayLayer.push(elem)
-    //         localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
-
-    //     window.location.href="../../MeanBuyProject/MainProject/Display3rdLayer/display3rdLayer.html";
-    // })
-
-
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+    })
+    
          productDiv.append(image,nameRating,hr,priceBox,para);
          document.getElementById("arrivaldata").append(productDiv)
 
      })
      
+// fastMovingProduct========================================================================
 
      fastMovingProduct.map(function(elem,index){
         var productDiv=document.createElement("div");
@@ -155,7 +155,18 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
 
+    //<--3rd Layer Section-->//
+
+        productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+    })
     
+         productDiv.append(image,nameRating,hr,priceBox,para);
+         document.getElementById("arrivaldata").append(productDiv)
 
         
         productDiv.append(image,nameRating,hr,priceBox,para);
@@ -163,9 +174,7 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
 
     })
     
-
-// ------------------------------------------
-
+//mobileAccess========================================================================
 
     mobileAccess.map(function(elem,index){
         var productDiv=document.createElement("div");
@@ -220,8 +229,15 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
          
-    
+          //<--3rd Layer Section-->//
 
+    productDiv.addEventListener("click", function(){
+        var displayLayer=[];
+        displayLayer.push(elem)
+        localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+    })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("mobilesCart").append(productDiv)
@@ -230,7 +246,7 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
 
 
 
-// --------------------------------
+//toy========================================================================
     
 
     toy.map(function(elem,index){
@@ -286,8 +302,15 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
          
-     
+          //<--3rd Layer Section-->//
 
+    productDiv.addEventListener("click", function(){
+        var displayLayer=[];
+        displayLayer.push(elem)
+        localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+    })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("toyCnt").append(productDiv)
@@ -295,12 +318,7 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
     })
 
 
-
-
-// ------------------------------
-
-
-
+//waterBottles========================================================================
 
     waterBottles.map(function(elem,index){
         var productDiv=document.createElement("div");
@@ -354,9 +372,16 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-         
- 
 
+          //<--3rd Layer Section-->//
+
+        productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+    
+            window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("bottles").append(productDiv)
@@ -364,7 +389,7 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
     })
 
 
-    // ---------------------------------
+//homeImprovement========================================================================
 
 
     homeImprovement.map(function(elem,index){
@@ -419,13 +444,22 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-         
 
+          //<--3rd Layer Section-->//
+
+    productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+    
+            window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("improveC").append(productDiv)
 
     })
+    //bluetoohEarphone========================================================================
 
     bluetoothEarphone.map(function(elem,index){
         var productDiv=document.createElement("div");
@@ -479,16 +513,23 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-         
-  
 
-        
+          //<--3rd Layer Section-->//
+
+        productDiv.addEventListener("click", function(){
+        var displayLayer=[];
+        displayLayer.push(elem)
+        localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
+
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("deviceB").append(productDiv)
 
     })
 
-
+//sportingBluetooh========================================================================
 
     sportingBluetooth.map(function(elem,index){
         var productDiv=document.createElement("div");
@@ -542,14 +583,22 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-         
+          //<--3rd Layer Section-->//
 
+        productDiv.addEventListener("click", function(){
+        var displayLayer=[];
+        displayLayer.push(elem)
+        localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("sportsBlue").append(productDiv)
 
     })
 
+//wirelessChargers========================================================================
 
     var wirelessChargers=JSON.parse(localStorage.getItem("wirelessChargers"))
 
@@ -607,13 +656,22 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
          
-     
-        
+          //<--3rd Layer Section-->//
+
+        productDiv.addEventListener("click", function(){
+        var displayLayer=[];
+        displayLayer.push(elem)
+        localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
+
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("wirelessC").append(productDiv)
 
     })
 
+//=========================================================
 
     var wirelessSpeakers=JSON.parse(localStorage.getItem("wirelessSpeakers"))
     console.log(wirelessSpeakers)
@@ -671,14 +729,22 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-        
- 
+          //<--3rd Layer Section-->//
+
+        productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+            window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("wirelessSpeak").append(productDiv)
 
     })
 
+//========================================================================
 
     var smartWatches=JSON.parse(localStorage.getItem("smartWatches"))
 
@@ -735,14 +801,23 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-        
-  
-        
+
+        //<--3rd Layer Section-->//
+
+      productDiv.addEventListener("click", function(){
+          var displayLayer=[];
+          displayLayer.push(elem)
+          localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+          window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+      })
+      
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("smartW").append(productDiv)
 
     })
 
+//========================================================================
 
     var mensWatches=JSON.parse(localStorage.getItem("mensWatches"))
 
@@ -801,14 +876,22 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
         
-    
+          //<--3rd Layer Section-->//
 
+        productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+            window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
         document.getElementById("mensW").append(productDiv)
 
     })
 
+//========================================================================
 
     var electronics=JSON.parse(localStorage.getItem("electronics"))
 
@@ -864,9 +947,17 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
         var para=document.createElement("p");
         para.setAttribute("class","pricePara")
         para.innerText=elem.para;
-        
-      
 
+        
+          //<--3rd Layer Section-->//
+
+        productDiv.addEventListener("click", function(){
+            var displayLayer=[];
+            displayLayer.push(elem)
+            localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
+
+            window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html";
+        })
         
         productDiv.append(image,nameRating,hr,priceBox,para);
  
@@ -876,8 +967,7 @@ var sportingBluetooth=JSON.parse(localStorage.getItem("sportingBluetooth"))
 
     console.log(electronics.index)
 
-
-
+//========================================================================
 
     var giftUp=JSON.parse(localStorage.getItem("giftUp"))
 
@@ -1194,3 +1284,4 @@ function rightSwipeFun(){
                                 i++;
                                 }
                         
+
