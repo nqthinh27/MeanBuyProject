@@ -4,20 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fabicon Part -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="shortcut icon" href="../Purchase/favicon_io/favicon.ico" type="image/ico">
+
+<script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <link rel="stylesheet" href="./footer.css">
-    <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
+<!-- <link rel="stylesheet" href="./Header.css"> -->
+    <!-- <link rel="stylesheet" href="./footer.css"> -->
+    <link rel="stylesheet" href="./body.css">
+    <link rel="stylesheet" href="./12Header.css">
+    <link rel="stylesheet" href="./12Footer.css">
+    
+
     <title>Document</title>
     <style>.inr-sign::before{content:"\20B9"}</style>
-    <style>
+      <style>
+
+
 
 body{
             font-family: sans-serif;
+            /* background-color: brown; */
         }
         .Main{
             display: grid;
             grid-template-columns: 1fr 5fr;
+            /* background-color: brown; */
+            margin-top: 180px;
         }
         #products
         {
@@ -26,7 +46,6 @@ body{
             grid-template-columns: repeat(3,25%);
             gap:20px 15px;
             justify-content: center;
-            
         }
         #products>div{
         background-color: aliceblue;
@@ -128,13 +147,116 @@ body{
 #filter>div>p{
     font-size: 20px;
 }
+
           
 
     </style>
 </head>
 <body>
+<!-- header section -->
+  <header>
 
-    <h1 style="text-align:center">Home Improvement</h1>
+    <div id="topBlankBar"></div>
+
+    
+    <div id="heading">
+
+        
+     
+            
+            <div>
+              <a href="../index.html"> <img id="imgLogo" src="https://meanbuyassets.s3.ap-south-1.amazonaws.com/baselogo.png" alt="meanbuyLogo"  /></a> 
+            </div>
+
+            <div>
+
+                <form action="" class="searchBox">
+
+                    <input type="search" id="searchInput" placeholder="Search">
+                     <button id="searchbtn"><i class="fa fa-search" aria-hidden="true"></i>
+                     </button>
+
+                </form>
+            </div>
+
+            <div id="sideheader">
+                <div id="sellerCorner">
+                    <a href="#">Seller's Corner</a>
+                    <a href="#">| Feedback</a>
+                    <a href="#">| Delivery Info</a>
+                    
+                </div>
+                <div id="loginDiv" >
+                    <!-- <i class="fa fa-cart-o" aria-hidden="true"></i> -->
+
+                    <a class="logon" href="../Purchase/Login/login.html">
+                        LOGIN
+                    </a>
+                    <a class="logon" href="../Purchase/Login/signup.html">/SIGN UP</a>
+                    <h5>WELCOME GUEST</h5>
+                </div>
+                <div id="cart"> <i class="fa fa-cart-plus" id="cartLogo" aria-hidden="true"></i> <span id="addCartdigit">0</span></div>
+
+            </div>
+
+    </div>
+         <div class="headerBox2">
+             <div id="category">
+                Category <i class="fa fa-caret-down" id="nimda"></i>
+                  
+                    <!-- <i class="fa-solid fa-caret-down"></i> --> 
+             </div>
+             <div class="bestD"><a href="../../MeanBuyProject/MainProject/BEST_Deals/BestDeals.html">Best Deals</a></div>
+             <div class="bestD"><a href="../ShopByBrand/ShopByBrand.html">Shop by Brand</a></div>
+             <div class="bestD"><a href="../MainProject/TRENDING/trending.html">
+                Trending
+             </a></div>
+             <div class="bestD"><a href="../MainProject/NEW_Arrivals/newArrivals.html">New Arrivals</a></div>
+         </div>
+
+</header>
+     <div id="newHead">
+        <nav id="hideNav">
+            <h4><i>Accessories</i></h4>
+    <main>
+        <div id="service">
+            <ul>
+                <li><a href="../MainProject/2ndLayerHTML/Accessories.html">Accessories</a>
+                    
+                                    
+                    </li>
+                <li><a href="../MainProject/2ndLayerHTML/electronic.html">Electronics</a></li>
+                <li><a href="../MainProject/2ndLayerHTML/Home&Living.html">Home & Living</a>
+                </li>
+                <li><a href="../SubPack/School_bagpacks.html">Kids & Mom</a>
+                </li>
+                <li><a href="../MainProject/2ndLayerHTML/MeanBuyDeal.html">Meanbuy Deals</a></li>
+                
+                <li>
+                    <a href="../MainProject/2ndLayerHTML/Mobile&Tabs.html">Mobiles & Tabs</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="menWomen">
+            <h3>
+                MEN
+            </h3>
+            <a href="../MainProject/2ndLayerHTML/mensWatch.html" >Watches</a>
+        </div>
+        <div class="menWomen">
+            <h3>WOMEN</h3>
+        
+            <a href="../MainProject/2ndLayerHTML/WomenWatch.html">Watches</a>
+        
+        </div>
+    </main>
+    
+           
+        </nav>
+        
+     </div>
+
     <div class="Main">
         <!-- left side filter div -->
         <div id="filter">
@@ -143,27 +265,36 @@ body{
             <button class="dropdown">BRANDS
                 <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-container">
-                    <p> <input type="checkbox"><a href="Wall_art_Brands.html">MB</a></p>
-                    <p><input type="checkbox"><a href="#">San Duens</a></p>
-                    <p><input type="checkbox"><a href="#">San Duens</a></p>
-                    <p> <input type="checkbox"><a href="#">Sandues</a></p>
+                 <p> <input type="checkbox"><a href="Brand.html">Baseus</a></p>
+                <p> <input type="checkbox"><a href="#">MB</a></p>
+                <p> <input type="checkbox"><a href="#">Moxas</a></p>
+                <p> <input type="checkbox"><a href="#">PD</a></p>
+                <p><input type="checkbox"><a href="#">San Duens</a></p>
+                <p><input type="checkbox"><a href="#">San Duens</a></p>
+                <p> <input type="checkbox"><a href="#">Sandues</a></p>
+                <p><input type="checkbox"><a href="#">Xiaomi</a></p>
                 </div>
             <hr id="hr">
             <button class="dropdown">COLORS
                 <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-container">
-                    <p><input type="checkbox"><a href="Wall_art_Brands.html">Beige</a></p>
-                    <p><input type="checkbox"><a href="#">Black</a></p>
-                    <p><input type="checkbox"><a href="#">Blue</a></p>
-                    <p><input type="checkbox"><a href="#">Brown</a></p>
-                    <p><input type="checkbox"><a href="#">Green</a></p>
-                    <p><input type="checkbox"><a href="#">Multi-Color</a></p>
-                    <p><input type="checkbox"><a href="#">Navy Blue</a></p>
-                    <p><input type="checkbox"><a href="#">Orange</a></p>
-                    <p><input type="checkbox"><a href="#">Pink</a></p>
-                    <p><input type="checkbox"><a href="#">Purple</a></p>
-                    <p><input type="checkbox"><a href="#">Red</a></p>
-                    <p><input type="checkbox"><a href="#">Yellow</a></p>
+                <p><input type="checkbox"><a href="Brand.html">Beige</a></p>
+                <p><input type="checkbox"><a href="#">Black</a></p>
+                <p><input type="checkbox"><a href="#">Blue</a></p>
+                <p><input type="checkbox"><a href="#">Brown</a></p>
+                <p><input type="checkbox"><a href="#">Gold</a></p>
+                <p><input type="checkbox"><a href="#">Grey</a></p>
+                <p><input type="checkbox"><a href="#">Green</a></p>
+                <p><input type="checkbox"><a href="#">Multi-Color</a></p>
+                <p><input type="checkbox"><a href="#">Navy Blue</a></p>
+                <p><input type="checkbox"><a href="#">Orange</a></p>
+                <p><input type="checkbox"><a href="#">Pink</a></p>
+                <p><input type="checkbox"><a href="#">Purple</a></p>
+                <p><input type="checkbox"><a href="#">Red</a></p>
+                <p><input type="checkbox"><a href="#">Rose</a></p>
+                <p><input type="checkbox"><a href="#">Silver</a></p>
+                <p><input type="checkbox"><a href="#">White</a></p>
+                <p><input type="checkbox"><a href="#">Yellow</a></p>
                 </div>
                 <hr id="hr">
                 <button class="dropdown">SIZE
@@ -266,12 +397,12 @@ body{
       </footer>
 </body>
 </html>
-<script src="Wall_art_Brands.js"></script>
+<script src="Brands.js"></script>
 
 <script>
-    var Wall_art_Brands = JSON.parse(localStorage.getItem("Wall_art_Brands")) ;
+    var Brands = JSON.parse(localStorage.getItem("Brands")) ;
 
-    Wall_art_Brands.map(function(elem)
+    Brands.map(function(elem)
     {
         var box=document.createElement("div");
 
@@ -326,7 +457,7 @@ body{
             displayLayer.push(elem)
             localStorage.setItem("displayLayer",JSON.stringify(displayLayer))
 
-        window.location.href="../Display3rdLayer/display3rdLayer.html"
+        window.location.href="../MainProject/Display3rdLayer/display3rdLayer.html"
     })
 
 
@@ -353,5 +484,23 @@ for (var i = 0; i < dropdown.length; i++) {
   dropdownContent.style.display = "block";
   }
   });
+}
+</script>
+
+<script>
+  // <--common categories JS-->  //
+      var hideNav=document.querySelector("#hideNav");
+
+var category=document.querySelector("#category").addEventListener("click",hideFunc);
+function hideFunc(){
+// hideNav.style.top="-10px"
+if(hideNav.style.display==="none"){
+hideNav.style.display="block"
+} 
+else {
+  hideNav.style.display="none"
+}
+
+
 }
 </script>

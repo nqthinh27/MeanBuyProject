@@ -11,8 +11,8 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 <link rel="shortcut icon" href="../Purchase/favicon_io/favicon.ico" type="image/ico">
-<script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
 
+<script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <!-- <link rel="stylesheet" href="./Header.css"> -->
@@ -187,7 +187,7 @@ body{
                 <div id="loginDiv" >
                     <!-- <i class="fa fa-cart-o" aria-hidden="true"></i> -->
 
-                    <a class="logon" href="../Purchase/Login/login.html">
+                    <a class="logon" href="../Purchase/Login/signup.html">
                         LOGIN
                     </a>
                     <a class="logon" href="../Purchase/Login/signup.html">/SIGN UP</a>
@@ -226,7 +226,7 @@ body{
                 <li><a href="../MainProject/2ndLayerHTML/electronic.html">Electronics</a></li>
                 <li><a href="../MainProject/2ndLayerHTML/Home&Living.html">Home & Living</a>
                 </li>
-                <li><a href="../PoorviBranch/School_bagpacks.html">Kids & Mom</a>
+                <li><a href="../SubPack/School_bagpacks.html">Kids & Mom</a>
                 </li>
                 <li><a href="../MainProject/2ndLayerHTML/MeanBuyDeal.html">Meanbuy Deals</a></li>
                 
@@ -263,36 +263,36 @@ body{
             <button class="dropdown">BRANDS
                 <i class="fa fa-caret-down"></i></button>
                 <div class="dropdown-container">
-                  <p> <input type="checkbox"><a href="School_bagpacks_Brands.html">Baseus</a></p>
-                  <p> <input type="checkbox"><a href="#">MB</a></p>
-                  <p> <input type="checkbox"><a href="#">Moxas</a></p>
-                  <p> <input type="checkbox"><a href="#">PD</a></p>
-                  <p><input type="checkbox"><a href="#">San Duens</a></p>
-                  <p><input type="checkbox"><a href="#">San Duens</a></p>
-                  <p> <input type="checkbox"><a href="#">Sandues</a></p>
-                  <p><input type="checkbox"><a href="#">Xiaomi</a></p>
-                  </div>
-              <hr id="hr">
-              <button class="dropdown">COLORS
-                  <i class="fa fa-caret-down"></i></button>
-                  <div class="dropdown-container">
-                  <p><input type="checkbox"><a href="School_bagpacks_Brands.html">Beige</a></p>
-                  <p><input type="checkbox"><a href="#">Black</a></p>
-                  <p><input type="checkbox"><a href="#">Blue</a></p>
-                  <p><input type="checkbox"><a href="#">Brown</a></p>
-                  <p><input type="checkbox"><a href="#">Gold</a></p>
-                  <p><input type="checkbox"><a href="#">Grey</a></p>
-                  <p><input type="checkbox"><a href="#">Green</a></p>
-                  <p><input type="checkbox"><a href="#">Multi-Color</a></p>
-                  <p><input type="checkbox"><a href="#">Navy Blue</a></p>
-                  <p><input type="checkbox"><a href="#">Orange</a></p>
-                  <p><input type="checkbox"><a href="#">Pink</a></p>
-                  <p><input type="checkbox"><a href="#">Purple</a></p>
-                  <p><input type="checkbox"><a href="#">Red</a></p>
-                  <p><input type="checkbox"><a href="#">Rose</a></p>
-                  <p><input type="checkbox"><a href="#">Silver</a></p>
-                  <p><input type="checkbox"><a href="#">White</a></p>
-                  <p><input type="checkbox"><a href="#">Yellow</a></p>
+                 <p> <input type="checkbox"><a href="Brand.html">Baseus</a></p>
+                <p> <input type="checkbox"><a href="#">MB</a></p>
+                <p> <input type="checkbox"><a href="#">Moxas</a></p>
+                <p> <input type="checkbox"><a href="#">PD</a></p>
+                <p><input type="checkbox"><a href="#">San Duens</a></p>
+                <p><input type="checkbox"><a href="#">San Duens</a></p>
+                <p> <input type="checkbox"><a href="#">Sandues</a></p>
+                <p><input type="checkbox"><a href="#">Xiaomi</a></p>
+                </div>
+            <hr id="hr">
+            <button class="dropdown">COLORS
+                <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-container">
+                <p><input type="checkbox"><a href="Brand.html">Beige</a></p>
+                <p><input type="checkbox"><a href="#">Black</a></p>
+                <p><input type="checkbox"><a href="#">Blue</a></p>
+                <p><input type="checkbox"><a href="#">Brown</a></p>
+                <p><input type="checkbox"><a href="#">Gold</a></p>
+                <p><input type="checkbox"><a href="#">Grey</a></p>
+                <p><input type="checkbox"><a href="#">Green</a></p>
+                <p><input type="checkbox"><a href="#">Multi-Color</a></p>
+                <p><input type="checkbox"><a href="#">Navy Blue</a></p>
+                <p><input type="checkbox"><a href="#">Orange</a></p>
+                <p><input type="checkbox"><a href="#">Pink</a></p>
+                <p><input type="checkbox"><a href="#">Purple</a></p>
+                <p><input type="checkbox"><a href="#">Red</a></p>
+                <p><input type="checkbox"><a href="#">Rose</a></p>
+                <p><input type="checkbox"><a href="#">Silver</a></p>
+                <p><input type="checkbox"><a href="#">White</a></p>
+                <p><input type="checkbox"><a href="#">Yellow</a></p>
                 </div>
                 <hr id="hr">
                 <button class="dropdown">SIZE
@@ -395,12 +395,12 @@ body{
       </footer>
 </body>
 </html>
-<script src="School_bagpacks.js"></script>
+<script src="Home_Improvement.js"></script>
 
 <script>
-    var School_bagpacks= JSON.parse(localStorage.getItem("School_bagpacks")) ;
+    var Home_Improvement = JSON.parse(localStorage.getItem("Home_Improvement")) ;
 
-    School_bagpacks.map(function(elem)
+    Home_Improvement.map(function(elem)
     {
         var box=document.createElement("div");
 
@@ -448,9 +448,8 @@ body{
         var h6=document.createElement("h6")
         h6.innerText=elem.para
         h6.setAttribute("id","shipping")
-
-             //<--3rd Layer Section-->//
-              box.addEventListener("click", function(){
+     //<--3rd Layer Section-->//
+      box.addEventListener("click", function(){
             var displayLayer=[];
             displayLayer.push(elem)
             localStorage.setItem("displayLayer",JSON.stringify(displayLayer))

@@ -532,7 +532,7 @@ footer{
     font-family: sans-serif;
     margin: auto;
     /* border: 1px solid pink; */
-  }
+}
   
   
   .child {
@@ -543,29 +543,29 @@ footer{
     justify-content: space-between;
     padding-top: 10px;
     /* border: 1px solid yellow; */
-  }
+}
   
   .info {
     width: fit-content;
     height: 100%;
     display: flex;
     margin-right: 30px;
-  }
+}
   .info h2 {
     color: #f7941d;
     font-size: medium;
     margin-bottom: 10px;
     font-weight: 400;
     /* font-family: "Inter", sans-serif; */
-  }
+}
   .info li a {
     color: #666;
     font-weight: 500;
     font-size: 12px;
-  }
+}
   .info li {
     list-style: none;
-  }
+}
   .quick {
 
     width: 30%;
@@ -574,25 +574,25 @@ footer{
     /* border: 1px solid black; */
     text-align: left;
 
-  }
+}
   .quick h2 {
     /* margin: 40px; */
     text-align: left;
     /* border: 1px solid green; */
-  }
+}
   .quick a {
       /* border: 1px solid blue; */
     color: black;
     font-weight: 500;
     font-size: small;
-  }
+}  
   .paymentmethod {
     background: url("https://www.meanbuy.com/assets/img/india/icons/paymethods22.png");
     width: 275px;
     height: 40px;
     margin-top: 20px;
     display: inline-block;
-  }
+}  
   
   .policy {
     background: #dbdbdb;
@@ -602,8 +602,98 @@ footer{
     color: #666;
     font-size: small;
     padding-right: 20px;
-  }
+}  
   hr{
       margin: 0 40px;
       color: #666;
-  }
+}
+.message-btn {
+    font-size: 20px;
+    padding: 15px;
+    background-color: #FFA500;
+    color: white;
+    /* font-weight: bold; */
+    border-radius: 50%;
+    box-shadow: 4px 4px 9px #b77e14;
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    bottom: 30px;
+    display: none;
+}
+
+.message-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.message-box {
+    display: none;
+    width: 325px;
+    height: 450px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 100;
+    right: 30px;
+    bottom: 30px;
+    flex-direction: column;
+    box-shadow: 2px 2px 4px #4b4b4b;
+}
+
+.message-header {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 7px 7px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.icon-user {
+    color: #FFA500;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    margin-right: 9px;
+}
+
+.icon-xmark {
+    position: absolute;     
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.message-footer {
+    position: absolute;
+    background-color: #ccc;
+    color: #fff;
+    padding: 7px 7px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    display: flex;
+}
+
+.send-button {
+    position: absolute;
+    color: #fff;
+    background-color: #FFA500;
+    padding: 8px;
+    border-radius: 50%;
+    right: 10px;
+    cursor: pointer;
+}
+
+.input-text {
+    padding-right: 113px;
+    border-radius: 15px;
+    padding-left: 7px;
+    border: none;
+}
+
+.open {
+    display: flex;
+}
