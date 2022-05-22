@@ -208,3 +208,38 @@ h2{
   margin: 0 0 10px;
   font-size: small;
 }
+
+.out {
+  margin-top: 130px;
+  margin-left: 70px;
+}
+
+.forgotpass {
+    margin-top: 15px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.forgotpass:hover {
+  color: #f7941d;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.newbie {
+  margin-top: 5px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+.newbie:hover {
+color: #f7941d;
+text-decoration: underline;
+font-weight: bold;
+}

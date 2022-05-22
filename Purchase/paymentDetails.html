@@ -195,6 +195,14 @@
     </div>
   </div>
 
+  <script>
+    const payBtn = document.querySelector('#paynow');
+    function paySuccess() {
+      window.location.href="./shopcompleted.html";
+    }
+    payBtn.addEventListener('click',paySuccess);
+  </script>
+
  <!-- body part--------------------------------------------------- -->
 
 

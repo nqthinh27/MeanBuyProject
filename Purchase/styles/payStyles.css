@@ -293,6 +293,8 @@ input[type='checkbox']:checked:after {
     border-radius: 0px;
     background-color: #f7941d;
     border: 2px solid #f7941d;
+    color: white;
+    cursor: pointer;
 }
 .pay{
     margin-left: 80px;
@@ -300,7 +302,7 @@ input[type='checkbox']:checked:after {
     text-align: center;
     margin-top: 20px;
 }
-#paynow{
-    color: white;
-
+#paynow:hover{
+    box-shadow: 0 0 15px rgb(255, 207, 118);
+    font-weight: bold;
 }

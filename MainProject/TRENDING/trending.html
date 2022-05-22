@@ -8,11 +8,11 @@
     
 
 <!-- Fabicon Part -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="shortcut icon" href="../../Purchase/favicon_io/favicon.ico" type="image/ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/Purchase/PurchaseAsset/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/Purchase/PurchaseAsset/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/Purchase/PurchaseAsset/favicon-16x16.png">
+<link rel="manifest" href="/Purchase/PurchaseAsset/site.webmanifest">
+<link rel="shortcut icon" href="/Purchase/PurchaseAsset/favicon.ico" type="image/ico">
 <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <script src="https://kit.fontawesome.com/13760dee3d.js" crossorigin="anonymous"></script>
 
@@ -26,14 +26,13 @@
 
   <link rel="stylesheet" href="../commonFooterStyle.css"/>
 
+  <link rel="stylesheet" href="/style.css">
+
 </head>
 
 <body>
       <!--Header Section -->
       <header>
-
-        <div id="topBlankBar"></div>
-
         
         <div id="heading">
 
@@ -236,6 +235,34 @@
             <div class="paymentmethod"></div>
           </div>
         </div>
+        
+        <a href="https://www.google.com/maps/place/144+Xu%C3%A2n+Th%E1%BB%A7y,+Mai+D%E1%BB%8Bch,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vietnam/@21.0342039,105.7821475,14.92z/data=!4m5!3m4!1s0x313454caaf9fa467:0x4cfd76cf514e1ce1!8m2!3d21.0368559!4d105.7822928" class="ggmap">
+          <img src="/CommonAsset/map.png" alt="map" class="map">
+        </a>
+
+        <i class="fa-regular fa-message message-btn open"></i>
+        <div class="message-box">
+          <div class="message-header"><i class="fa-solid fa-user icon-user"></i>Administrator<i class="fa-solid fa-xmark icon-xmark"></i></div>
+          <div></div>
+          <div class="message-footer"><input class="input-text" type="text" placeholder="Type here!" ><i class="fa fa-paper-plane send-button"></i></div>
+        </div>
+        <script>
+          const messBtn = document.querySelector('.message-btn');
+          const messBox = document.querySelector('.message-box');
+          const messHideBtn = document.querySelector('.icon-xmark');
+          function showMessBox() {
+            messBox.classList.add('open');
+            messBtn.classList.remove('open');
+          }
+          function hideMessBox() {
+            messBox.classList.remove('open');
+            messBtn.classList.add('open');
+          }
+          messBtn.addEventListener('click',showMessBox);
+          messHideBtn.addEventListener('click',hideMessBox);
+        </script>
+
+
         <div class="policy">© MeanBuy.com. All Rights Reserved</div>
       </footer>
   

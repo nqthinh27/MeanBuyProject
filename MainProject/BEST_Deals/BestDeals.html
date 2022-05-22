@@ -25,14 +25,13 @@
    
     <link rel="stylesheet" href="../commonFooterStyle.css"/>
 
+    <link rel="stylesheet" href="/style.css">
+
 </head>
 <body>
     <!--Header Section -->
     <header>
-
-        <div id="topBlankBar"></div>
-
-        
+      
         <div id="heading">
 
             
@@ -234,6 +233,33 @@
             <div class="paymentmethod"></div>
           </div>
         </div>
+
+        <a href="https://www.google.com/maps/place/144+Xu%C3%A2n+Th%E1%BB%A7y,+Mai+D%E1%BB%8Bch,+C%E1%BA%A7u+Gi%E1%BA%A5y,+H%C3%A0+N%E1%BB%99i,+Vietnam/@21.0342039,105.7821475,14.92z/data=!4m5!3m4!1s0x313454caaf9fa467:0x4cfd76cf514e1ce1!8m2!3d21.0368559!4d105.7822928" class="ggmap">
+          <img src="/CommonAsset/map.png" alt="map" class="map">
+        </a>
+
+        <i class="fa-regular fa-message message-btn open"></i>
+        <div class="message-box">
+          <div class="message-header"><i class="fa-solid fa-user icon-user"></i>Administrator<i class="fa-solid fa-xmark icon-xmark"></i></div>
+          <div></div>
+          <div class="message-footer"><input class="input-text" type="text" placeholder="Type here!" ><i class="fa fa-paper-plane send-button"></i></div>
+        </div>
+        <script>
+          const messBtn = document.querySelector('.message-btn');
+          const messBox = document.querySelector('.message-box');
+          const messHideBtn = document.querySelector('.icon-xmark');
+          function showMessBox() {
+            messBox.classList.add('open');
+            messBtn.classList.remove('open');
+          }
+          function hideMessBox() {
+            messBox.classList.remove('open');
+            messBtn.classList.add('open');
+          }
+          messBtn.addEventListener('click',showMessBox);
+          messHideBtn.addEventListener('click',hideMessBox);
+        </script>
+
         <div class="policy">© MeanBuy.com. All Rights Reserved</div>
       </footer>
   
@@ -335,7 +361,7 @@ else {
 
 
 
-
+<script>
 newArrivals.map(function(elem,index){
          
   var productDiv=document.createElement("div");
@@ -405,3 +431,4 @@ priceBox.append(symbol,price)
   document.getElementById("arrivaldata").append(productDiv)
 //-=====================================================================
 })
+</script>

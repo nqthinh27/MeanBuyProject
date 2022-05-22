@@ -697,3 +697,12 @@ footer{
 .open {
     display: flex;
 }
+
+.map {
+    max-width: calc(100% - 170px);
+    margin: 35px 85px 0px 85px;
+}
+
+.ggmap {
+    width: 100%;
+}
