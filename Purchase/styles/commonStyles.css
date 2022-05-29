@@ -168,7 +168,7 @@ h2{
   background-color: #fff7dc;
 }
 .brandlogo img{
-  width: 100px;
+  width: 180px;
 }
 .orangebar {
   height: 3px;
@@ -180,8 +180,8 @@ h2{
   width: fit-content;
   position: relative;
   display: block;
- left: 1000px;
- bottom: 250px;
+  left: 928px;
+  bottom: 400px;
  text-align: center;
  line-height: 5px;
   
